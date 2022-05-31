@@ -15,72 +15,106 @@
   </head>
 
   <body>
-    <main class="text-center">
-      <header class="text-center">
-        <h1 class="fw-bold">App de gastos</h1>
-        <h3 class="fw-bold">ingresa cuanto pago cada persona</h3>
-      </header>
-
-      <form class="row g-3 justify-content-center">
-        <div class="col-auto">
-          <input
-            type=""
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Nombre"
-          />
-        </div>
-        <div class="col-auto">
-          <input
-            type=""
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Monto"
-          />
+    <main>
+      <div class="container">
+        <div class="p-5 mb-5 bg-primary text-white">
+          <header class="text-center">
+            <h1 class="fw-bold">Comparti Gastos</h1>
+            <h3>ingresa cuanto pago cada persona</h3>
+          </header>
         </div>
 
-        <div>
-          <button type="submit" class="btn btn-primary mb-3 form-control">
-            Enviar
-          </button>
-        </div>
-      </form>
+        <form class="row g-3 justify-content-center">
+          <div class="col-auto">
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="col-auto">
+            <input
+              type="number"
+              class="form-control"
+              id="Monto"
+              placeholder="Monto"
+            />
+          </div>
 
-      <form class="col g-3">
-        <div class="row-auto">
-          <input
-            type="text"
-            readonly
-            class="form-control-plaintext"
-            id="staticEmail2"
-            value="email@example.com"
-          />
-        </div>
-        <div class="row-auto">
-          <input
-            type=""
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Password"
-          />
-        </div>
-        <div class="flex">
-          <input
-            type=""
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Password"
-          />
-        </div>
-        <div class="row-auto">
-          <input
-            type=""
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Password"
-          />
-        </div>
-      </form>
+          <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-5">
+              <button type="submit" class="btn btn-primary col-12">
+                Enviar
+              </button>
+            </div>
+          </div>
+
+          <!-- <Despues del Boton> -->
+          <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-5">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext fw-bold"
+                id="staticEmail2"
+                value="Recibiras los resultados a continuacion: "
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-5">
+              <input
+                type="text,number"
+                class="form-control"
+                id="persona1"
+                placeholder="Persona 1"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-5">
+              <input
+                type=""
+                class="form-control"
+                id="persona2"
+                placeholder="persona 2"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-5">
+              <input
+                type="text"
+                class="form-control"
+                id="persona3"
+                placeholder="Persona 3"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-5">
+              <input
+                type="text"
+                class="form-control"
+                id="Resultado"
+                placeholder="Total"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-5">
+              <input
+                type="text"
+                class="form-control"
+                id="Resultado"
+                placeholder="Resultado: Cada uno debe pagar $...."
+              />
+            </div>
+          </div>
+        </form>
+        <!--</form>-->
+      </div>
     </main>
 
     <!-- JavaScript Bundle with Popper -->
